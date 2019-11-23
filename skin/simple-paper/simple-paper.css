@@ -1,5 +1,6 @@
 @charset"UTF-8";
 
+
 a {
 	color: #21759b;
 	text-decoration: none
@@ -261,7 +262,9 @@ body, .header, .appeal {
 }
 #sidebar aside.widget_search {
 	padding: 10px 0px 10px 20px;
-	margin-bottom: 15px
+	margin-bottom: 15px;
+	background-color: transparent;
+	box-shadow: none
 }
 #sidebar aside.widget_new_entries, #sidebar aside.widget_popular_entries {
 	text-align: left;
