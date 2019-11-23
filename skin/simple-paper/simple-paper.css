@@ -88,12 +88,19 @@ body {
 	line-height: 1.4;
 	font-weight: bold
 }
+/*.font-awesomeの仕様変更のため
 .post-date::before {
 	content: none
 }
-.post-update::before {
+body.font-awesome-4 .post-update::before {
+	font-family: FontAwesome;
 	content: "\f021"
 }
+body.font-awesome-5 .post-update::before {
+	font-family:'Font Awesome 5 Free';
+	content: "\f2f1"
+}
+*/
 .pagination-next-link {
 	background-color: #fff;
 	border: none;
@@ -322,16 +329,29 @@ body, .header, .appeal {
 	text-align: left
 }
 .widget_categories ul li a:before {
-	font-family: FontAwesome;
-	content: '\f114';
 	display: inline-block;
 	padding-right: 10px
 }
 .widget_categories ul li ul li a:before {
-	font-family: FontAwesome;
-	content: '\f07b';
 	font-size: 0.8em
 }
+body.font-awesome-4 .widget_categories ul li a:before {
+	font-family: FontAwesome;
+	content: '\f114';
+}
+body.font-awesome-4 .widget_categories ul li ul li a:before {
+	font-family: FontAwesome;
+	content: '\f07b';
+}
+body.font-awesome-5 .widget_categories ul li a:before {
+	font-family:'Font Awesome 5 Free';
+	content: '\f07b';
+}
+body.font-awesome-5 .widget_categories ul li ul li a:before {
+	font-family:'Font Awesome 5 Free';
+	content: '\f07b';
+}
+
 .widget_categories ul li:first-child {
 	padding-top: 0px
 }
